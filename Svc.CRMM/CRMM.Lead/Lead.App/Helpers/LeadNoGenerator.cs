@@ -1,4 +1,4 @@
-namespace Lead.Utility.Extensions;
+namespace Lead.App.Helpers;
 
 public static class LeadNoGenerator
 {

@@ -1,22 +1,19 @@
 namespace Lead.Domain.DTO;
 
-public sealed record LeadDto(
+public sealed record AssignedLeadRowDto(
     Guid Id,
     string LeadNo,
     string? FirstName,
     string? LastName,
-    string? CompanyName,
-    string? CompanySize,
     string? JobTitle,
-    string? Industry,
-    decimal? Budget,
-    string? Timeline,
+    string? CompanyName,
     string? Email,
     string? Phone,
     Guid SourceId,
+    string SourceName,
     Guid StatusId,
-    Guid StageId,
+    string StatusName,
+    int? LatestScore,
     Guid? AssignedToUserId,
     string? AssignedToName,
-    DateTimeOffset CreatedAt,
     DateTimeOffset UpdatedAt);

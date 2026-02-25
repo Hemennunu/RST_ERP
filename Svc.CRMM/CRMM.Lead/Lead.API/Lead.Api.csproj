@@ -5,12 +5,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Lead.App\Lead.App.csproj" />
-    <ProjectReference Include="..\Lead.Domain\Lead.Domain.csproj" />
     <ProjectReference Include="..\Lead.Utility\Lead.Utility.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+    <PackageReference Include="Scalar.AspNetCore" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Asp.Versioning.Mvc" />
+    <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" />
   </ItemGroup>
 </Project>

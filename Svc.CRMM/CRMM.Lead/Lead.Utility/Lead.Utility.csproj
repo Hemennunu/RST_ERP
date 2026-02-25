@@ -5,6 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Lead.Domain\Lead.Domain.csproj" />
+    <ProjectReference Include="..\Lead.App\Lead.App.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" />
   </ItemGroup>
 </Project>
